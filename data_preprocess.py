@@ -41,11 +41,11 @@ def create_autoregression_dataset(ticker_data_list: list[dict], n_past_days: int
         return torch.tensor([]), torch.tensor([])  # 不足以创建任何样本
 
     for i in range(len(daily_features_list) - n_past_days):
-        # 输入特征：前 n_past_days 天的数据，展平
-        past_features_flat = []
+        # 输入特征：前 n_past_days 天的数据
+        past_features = []
         for j in range(n_past_days):
-            past_features_flat.append(daily_features_list[i + j])
-        X.append(past_features_flat)
+            past_features.append(daily_features_list[i + j])
+        X.append(past_features)
 
         # 标签：第 (n_past_days+1) 天的数据
         Y.append(daily_features_list[i + n_past_days])
