@@ -263,7 +263,7 @@ wheels = [
 
 [[package]]
 name = "deeplotx"
-version = "0.4.3"
+version = "0.4.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "hf-xet" },
@@ -274,9 +274,9 @@ dependencies = [
     { name = "transformers" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/63/38/197cd1533a95b1696d52be6b9c4f9dbcfac55a7c14b567206e3532937048/deeplotx-0.4.3.tar.gz", hash = "sha256:e3fc672b56750e005b61371e15eb6100cfb67d35c64f9e3e1942f739f08232df", size = 21591 }
+sdist = { url = "https://files.pythonhosted.org/packages/27/d9/7748f8103a97cfaabc8e7d69236cf6f90c4a4f47366c7a20b244c5ffa325/deeplotx-0.4.5.tar.gz", hash = "sha256:665da7eb00c1e81f06db034cf849743f18ce4c5131257bde9939562cfd42ac41", size = 21572 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/a5/794611ec3dc770f5a563ef05c5b3c5147dc3d19f58c8f2b3377228bf3ec7/deeplotx-0.4.3-py3-none-any.whl", hash = "sha256:da1667676ec11efeaecbfe33fcf7a6d276e8f628411f829ef0206effc93d7bc5", size = 26622 },
+    { url = "https://files.pythonhosted.org/packages/30/00/9729477f8ad7703d7a364bb365ee8359bec57354b1e62f48fd003a9f35b2/deeplotx-0.4.5-py3-none-any.whl", hash = "sha256:053ceeb06880c86deae7a16cf4005761cbafc3b7b9a513632a2ab457e6aed84e", size = 26607 },
 ]
 
 [[package]]
