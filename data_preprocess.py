@@ -64,8 +64,8 @@ _dataset = [{
 
 def get_dataset(ticker: str, train_ratio: float = 0.95, batch_size: int = 16) -> tuple[DataLoader, DataLoader]:
     _dataset_from_ticker = [x for x in _dataset if x['ticker'] == ticker][0]['data']
-    inputs = torch.stack([x[0] for x in _dataset_from_ticker[0]])
-    labels = torch.stack([x[1] for x in _dataset_from_ticker[1]])
+    inputs = torch.stack([x for x in _dataset_from_ticker[0]])
+    labels = torch.stack([x for x in _dataset_from_ticker[1]])
     dataset_size = len(labels)
     train_size = int(train_ratio * dataset_size)
     train_dataset = TensorDataset(inputs[:train_size], labels[:train_size])
