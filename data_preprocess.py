@@ -61,6 +61,8 @@ _dataset = [{
     'data': create_autoregression_dataset(x, n_past_days=5)
 }for x in dataset]
 
+print('Tickers: ', [x['ticker'] for x in _dataset])
+
 
 def get_dataset(ticker: str, train_ratio: float = 0.95, batch_size: int = 16) -> tuple[DataLoader, DataLoader]:
     _dataset_from_ticker = [x for x in _dataset if x['ticker'] == ticker][0]['data']
